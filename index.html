@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+         h1{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #div2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="div">
+        <h1>Home</h1>
+
+        <form>
+            <input type="text" id="todo" placeholder="Add your todo">
+
+            <select id="select">
+                <option value="Karachi">Karachi</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Quetta">Quetta</option>
+                <option value="Khairpur">Khairpur</option>
+            </select>
+
+            <button id="add-btn">Add</button>
+        </form> <br>
+
+        <div id="div2">
+            <button class="cities-btn">Karachi</button>
+            <button class="cities-btn">Islamabad</button>
+            <button class="cities-btn">Lahore</button>
+            <button class="cities-btn">Peshawar</button>
+            <button class="cities-btn">Quetta</button>
+            <button class="cities-btn">Khairpur</button>
+            <button class="reset">Reset</button>  
+        </div>
+
+        <ul id="data"></ul> <br><br>
+
+    </div>
+        
+
+    <script type="module" src="file.js"></script>
+</body>
+</html>
